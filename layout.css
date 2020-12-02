@@ -1,16 +1,9 @@
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: SDSwaggerTTF;
-
-  src: local("SDSwaggerTTF"),
-    url("/Users/iseung-gi/Downloads/SDSwaggerTTF_Web/SDSwaggerTTF.woff")
-      format("woff");
-}
 body {
   height: 100vh;
-  font-family: SDSwaggerTTF;
+  font-family: "Do Hyeon", sans-serif;
   background-color: white;
 }
 header,
@@ -38,9 +31,9 @@ header h1 {
 header h3,
 header p {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 320;
   margin-bottom: 30px;
-  width: 70%;
+  width: 75%;
   line-height: 1.2;
   text-align: justify;
 }
@@ -78,10 +71,10 @@ main .movie .wrapper .movie__header h4 {
   align-self: flex-start;
   width: auto;
 }
-main .movie .wrapper .movie__header h5 {
+.mystate {
   font-size: 55px;
-  width: 230px;
-  height: 0;
+  width: 290px;
+  margin-top: 30px;
 }
 header .name {
   display: flex;
@@ -96,7 +89,7 @@ h2 {
   font-size: 80px;
 }
 .char2 {
-  margin-top: 85px;
+  margin-top: 97px;
   font-size: 20px;
 }
 
@@ -109,7 +102,7 @@ h2 {
   border: 0;
   outline: 0;
   border-radius: 30px;
-  margin-left: 320px;
+  margin-left: 271px;
   margin-top: 15px;
 }
 .githubbackground {

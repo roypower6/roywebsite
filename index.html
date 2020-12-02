@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <script src="vue.min.js"></script>
     <title>Roypower6</title>
   </head>
@@ -17,7 +19,7 @@
         @SEUNGGI RHEE
         </span>
         <button class="instargrambackground" onclick="instargramclick();"></button>
-          <button class="githubbackground" onclick="githubclick();"></button>
+        <button class="githubbackground" onclick="githubclick();"></button>
       </div> 
       <div class="bottom">
         <h3>
@@ -35,9 +37,9 @@
       <section class="movie">
         <div class="wrapper">
           <div class="movie__header">
-            <h5>
+            <span class="mystate">
           나의 스택 현황
-        </h5>
+        </span>
         <h4>
               <div class="progressbar-container">
                 <progressbar v-for="(item, index) in items" :target="item.value">
