@@ -1,0 +1,69 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+.progressbar-container {
+  width: 800px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.progress-value {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding-bottom: 0.25rem;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 130%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  color: #00ffdd;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #00ffea;
+  border-radius: 8px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #eee;
+  border-radius: 8px;
+}

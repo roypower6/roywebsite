@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="vue.min.js"></script>
+    <title>Roypower6</title>
+  </head>
+  <body>
+    <header>  
+      <div class="name">
+      <span class="char">
+        Roy
+      </span>
+      <span class="char2">
+        @SEUNGGI RHEE
+        </span>
+        <button class="instargrambackground"></button>
+          <button class="githubbackground"></button>
+      </div> 
+      <div class="bottom">
+        <h3>
+          백엔드와 프론트엔드, 그 모든 지식을 알고 싶습니다.
+        </h3>
+        <p>
+          3년간 쌓아올린 영상편집실력을 뒤로한 채, 진정 제가 하고 싶은 꿈을
+          이루기 위해 오늘도 노력하고 있습니다. 수많은 경험이 저를
+          성장시켰고, 앞으로의 저를 만들어갈 것입니다. 17살인 지금부터 앞으로
+          3년간, 이 오른쪽 스크롤바의 길이는 쉴새없이 늘어날 것입니다.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="movie">
+        <div class="wrapper">
+          <div class="movie__header">
+            <h5>
+          나의 스택 현황
+        </h5>
+        <h4>
+              <div class="progressbar-container">
+                <progressbar v-for="(item, index) in items" :target="item.value">
+                  <div class="progress-value" slot-scope="props">
+                    <span class="lang">{{ item.key }}</span>
+                    <!--
+                    <span :class="props.text">{{ item.value }} %</span>
+                    -->
+                </progressbar>
+                </h4>
+              </div>
+            </div>
+            </div>
+      </section>
+
+
+      <section class="movie">
+        <div class="wrapper">
+          <div class="movie__header">
+            <h4></h4>
+            <h5></h5>
+      </section>
+      <section class="movie">
+        <div class="wrapper">
+          <div class="movie__header">
+            <h4></h4>
+            <h5></h5>
+      </section>
+    </main>
+    <script type="text/javascript" src="chart.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

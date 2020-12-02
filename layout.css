@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: SDSwaggerTTF;
+
+  src: local("SDSwaggerTTF"),
+    url("/Users/iseung-gi/Downloads/SDSwaggerTTF_Web/SDSwaggerTTF.woff")
+      format("woff");
+}
+body {
+  height: 100vh;
+  font-family: SDSwaggerTTF;
+  background-color: white;
+}
+header,
+main .movie .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  position: fixed;
+  top: -80px;
+  left: 0;
+  height: 100%;
+  padding: 100px;
+  padding: 10vh 0 55px 55px;
+  justify-content: space-between;
+  color: black;
+  width: 55%;
+}
+header h1 {
+  font-size: 75px;
+  width: 15%;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+header h3,
+header p {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  width: 70%;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+main {
+  margin-left: 45%; /*왼쪽 fixedlabel width 조절*/
+}
+main .movie {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 5%,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    )
+    black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+main .movie .wrapper {
+  width: 85%;
+}
+main .movie .wrapper .movie__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .movie .wrapper .movie__header h4 {
+  font-size: 45px;
+  align-self: flex-start;
+  width: auto;
+}
+main .movie .wrapper .movie__header h5 {
+  font-size: 55px;
+  width: 230px;
+  height: 0;
+}
+header .name {
+  display: flex;
+}
+h2 {
+  height: 38%;
+  align-self: flex-end;
+}
+
+.char {
+  margin-top: 30px;
+  font-size: 80px;
+}
+.char2 {
+  margin-top: 85px;
+  font-size: 20px;
+}
+
+.instargrambackground {
+  background-image: url(images/instargram_image.png);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-size: 30px;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  margin-left: 320px;
+  margin-top: 15px;
+}
+.githubbackground {
+  background-image: url(images/github2.png);
+  background-repeat: no-repeat;
+  background-position: 55%;
+  background-size: 70px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  margin-top: 12px;
+}
