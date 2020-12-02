@@ -5,3 +5,4 @@ function instargramclick(){
 function githubclick(){
     location.href="https://github.com/roypower6";
 }
+
